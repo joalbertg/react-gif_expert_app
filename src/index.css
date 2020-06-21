@@ -4,12 +4,66 @@
 }
 
 body {
-  padding: 60px;
+  background-color: #eeeeee;
+  padding: 1rem;
 }
 
 input {
   font-size: 1.2rem;
   width: 100%;
   color: grey;
+}
+
+img {
+  max-width: 100%;
+}
+
+.card-grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-grid h3 {
+  flex: 0 1 100%;
+  text-align: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 1rem;
+  justify-content: space-between;
+}
+
+.card p {
+  padding: 5px;
+  text-align: center;
+}
+
+@media screen and (min-width: 480px) {
+  .card-grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: stretch;
+  }
+
+  .card-grid .card {
+    flex: 0 1 calc(50% - 1rem);
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (min-width: 780px) {
+  .card-grid .card {
+    flex: 0 1 calc(25% - 1rem);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card-grid .card {
+    flex: 0 1 calc(16.6% - 1rem);
+  }
 }
 

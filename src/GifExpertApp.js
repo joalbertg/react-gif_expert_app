@@ -1,9 +1,12 @@
 import React, {useState} from 'react';
 
-import { AddCategory } from './components';
+import {
+  AddCategory,
+  ListCategories
+} from './components';
 
 const GifExpertApp = () => {
-  const [categories, setCategories] = useState(['One Punch', 'Samurai X', 'Dragon Ball']);
+  const [categories, setCategories] = useState(['Dragon Ball']);
 
   return (
     <>
@@ -12,12 +15,7 @@ const GifExpertApp = () => {
         setCategories={setCategories}
       />
       <hr />
-
-      <ol>
-        {
-          categories.map(category => <li key={category}>{ category }</li>)
-        }
-      </ol>
+      <ListCategories categories={categories} />
     </>
   );
 }

@@ -16,7 +16,7 @@
 
 ### Project Structure
 
-> run `tree -I "node_modules|public"`
+> run `tree -I "node_modules|public|build|docs"`
 ```shell
 .
 ├── Dockerfile
@@ -35,13 +35,14 @@
 │   │   ├── getGifs.js
 │   │   └── index.js
 │   ├── hooks
+│   │   ├── index.js
 │   │   └── useFetchGifs.js
 │   ├── index.css
 │   ├── index.js
 │   └── setupTests.js
 └── yarn.lock
 
-4 directories, 17 files
+4 directories, 18 files
 ```
 
 ### Scripts
@@ -58,4 +59,8 @@
 
 > run `docker-compose run app yarn build`, install `yarn global http-server` to test.
 > run `http-server build`
+
+### GitHub Pages
+
+rename the `build` directory to `docs`, and rename the root paths `/` to `./` to search the some path.
 

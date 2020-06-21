@@ -34,7 +34,7 @@ img {
   background-color: white;
   padding: 10px;
   margin-bottom: 1rem;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .card p {

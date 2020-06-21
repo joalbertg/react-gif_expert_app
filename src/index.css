@@ -28,6 +28,13 @@ img {
   text-align: center;
 }
 
+.card-grid .loading {
+  font-size: 1.5rem;
+  font-weight: 700; 
+  flex: 0 1 100%;
+  text-align: center;
+}
+
 .card {
   display: flex;
   flex-direction: column;

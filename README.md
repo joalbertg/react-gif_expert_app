@@ -22,6 +22,20 @@
 [enzyme_to_json]: https://www.npmjs.com/package/enzyme-to-json
 [react_hooks_testing]: https://react-hooks-testing-library.com/
 
+### Screenshots
+
+<p align="center">
+  <kbd>
+    <img src="screenshots/without-categories.png" title="without categories"  width="400px" height="auto">
+  </kbd>
+</p>
+
+<p align="center">
+  <kbd>
+    <img src="screenshots/search-deadpool.png" title="Deadpool"  width="600px" height="auto">
+  </kbd>
+</p>
+
 ### Installs
 
 With `package.json` and dependencies
@@ -31,6 +45,7 @@ Without dependencies
 ```shell
 docker-compose run app yarn add enzyme enzyme-adapter-react-16 enzyme-to-json --dev
 docker-compose run app yarn add @testing-library/react-hooks --dev
+docker-compose run app @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome
 ```
 
 ### Project Structure

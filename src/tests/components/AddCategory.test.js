@@ -13,7 +13,14 @@ describe('Tests AddCategory component', () => {
   });
 
   test('Should display correctly', () => {
+    const section = wrapper.find('section');
+    const fontAwesomeIcon = wrapper.find('FontAwesomeIcon');
+    const { iconName } = fontAwesomeIcon.prop('icon');
+
     expect(wrapper).toMatchSnapshot();
+    expect(section.prop('id')).toBe('search');
+    expect(section.prop('children').length).toBe(2);
+    expect(iconName).toBe('search');
   });
 
   test('Should change the text box', () => {

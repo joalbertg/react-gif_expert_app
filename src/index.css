@@ -8,10 +8,29 @@ body {
   padding: 1rem;
 }
 
+#search {
+  position: relative;
+  font-size: 20px;
+}
+
+#search label {
+  position: absolute;
+  left: 13px;
+  top: 6px;
+}
+
 input {
   font-size: 1.2rem;
   width: 100%;
   color: grey;
+  padding: 5px 3rem;
+  border: none;
+  border-radius: 15px;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 .5pt .5pt black;
 }
 
 img {
@@ -26,6 +45,10 @@ img {
 .card-grid h3 {
   flex: 0 1 100%;
   text-align: center;
+  text-transform: Capitalize;
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin: 0 0 20px;
 }
 
 .card-grid .loading {
@@ -42,6 +65,7 @@ img {
   padding: 10px;
   margin-bottom: 1rem;
   justify-content: space-evenly;
+  border-radius: 5px;
 }
 
 .card p {

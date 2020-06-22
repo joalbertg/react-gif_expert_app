@@ -1,6 +1,10 @@
 import React, {useState} from 'react';
 import PropTypes from 'prop-types';
 
+// get our fontawesome imports
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 const AddCategory = ({setCategories}) => {
   const [value, setValue] = useState('');
   const handleAdd = event => {
@@ -18,12 +22,17 @@ const AddCategory = ({setCategories}) => {
 
   return(
     <form onSubmit={handleSubmit}>
-      <input
-        type="text"
-        value={value}
-        onChange={handleAdd}
-        placeholder='Add here...'
-      />
+      <section id="search">
+        <label>
+          <FontAwesomeIcon icon={faSearch} />
+        </label>
+        <input
+          type="text"
+          value={value}
+          onChange={handleAdd}
+          placeholder='Search here...'
+        />
+      </section>
     </form>
   );
 }

@@ -2,17 +2,36 @@
 
 - [Developers Giphy][giphy]
 - [Animate CSS][animate_css]
+
 - [Estructura de archivos][structure]
 - [Structuring projects and naming components in React][structuring-projects-and-naming-components]
 
-[structure]: https://es.reactjs.org/docs/faq-structure.html
-[structuring-projects-and-naming-components]: https://hackernoon.com/structuring-projects-and-naming-components-in-react-1261b6e18d76
+- [Jest][jestjs]
+- [Enzyme][enzyme]
+- [Enzyme to json][enzyme_to_json]
+- [React Hooks Testing Library][react_hooks_testing]
+
 [giphy]: https://developers.giphy.com/
 [animate_css]: https://animate.style/
 
+[structure]: https://es.reactjs.org/docs/faq-structure.html
+[structuring-projects-and-naming-components]: https://hackernoon.com/structuring-projects-and-naming-components-in-react-1261b6e18d76
+
+[jestjs]: https://jestjs.io/docs/en/expect
+[enzyme]: https://enzymejs.github.io/enzyme/
+[enzyme_to_json]: https://www.npmjs.com/package/enzyme-to-json
+[react_hooks_testing]: https://react-hooks-testing-library.com/
+
 ### Install
 
+With `package.json` and dependencies
 > run `docker-compose run app yarn`
+
+Without dependencies
+```shell
+docker-compose run app yarn add enzyme enzyme-adapter-react-16 enzyme-to-json --dev
+docker-compose run app yarn add @testing-library/react-hooks --dev
+```
 
 ### Project Structure
 
@@ -39,10 +58,26 @@
 │   │   └── useFetchGifs.js
 │   ├── index.css
 │   ├── index.js
-│   └── setupTests.js
+│   ├── setupTests.js
+│   └── tests
+│       ├── GifExpertApp.test.js
+│       ├── __snapshots__
+│       │   └── GifExpertApp.test.js.snap
+│       ├── components
+│       │   ├── AddCategory.test.js
+│       │   ├── GifGrid.test.js
+│       │   ├── GifGridItem.test.js
+│       │   └── __snapshots__
+│       │       ├── AddCategory.test.js.snap
+│       │       ├── GifGrid.test.js.snap
+│       │       └── GifGridItem.test.js.snap
+│       ├── helpers
+│       │   └── getGifs.test.js
+│       └── hooks
+│           └── useFetchGifs.test.js
 └── yarn.lock
 
-4 directories, 18 files
+10 directories, 28 files
 ```
 
 ### Scripts

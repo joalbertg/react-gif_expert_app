@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests GifGrid component Should display correctly 1`] = `
+<div
+  className="card-grid"
+>
+  <h3
+    className="animate__animated animate__fadeIn"
+  >
+    Dragon Ball
+  </h3>
+  <p
+    className="loading animate__animated animate__flash"
+  >
+    Loading
+  </p>
+</div>
+`;
+
+exports[`Tests GifGrid component Should show items when loading gifs with useFetchGifs 1`] = `
+<div
+  className="card-grid"
+>
+  <h3
+    className="animate__animated animate__fadeIn"
+  >
+    Dragon Ball
+  </h3>
+  <GifGridItem
+    id="ABC123"
+    key="ABC123"
+    title="something"
+    url="https://localhost:3000/something.gif"
+  />
+  <GifGridItem
+    id="123ABC"
+    key="123ABC"
+    title="something_v2"
+    url="https://localhost:3000/something_v2.gif"
+  />
+</div>
+`;

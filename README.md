@@ -22,7 +22,7 @@
 [enzyme_to_json]: https://www.npmjs.com/package/enzyme-to-json
 [react_hooks_testing]: https://react-hooks-testing-library.com/
 
-### Install
+### Installs
 
 With `package.json` and dependencies
 > run `docker-compose run app yarn`
@@ -67,17 +67,19 @@ docker-compose run app yarn add @testing-library/react-hooks --dev
 │       │   ├── AddCategory.test.js
 │       │   ├── GifGrid.test.js
 │       │   ├── GifGridItem.test.js
+│       │   ├── ListCategories.test.js
 │       │   └── __snapshots__
 │       │       ├── AddCategory.test.js.snap
 │       │       ├── GifGrid.test.js.snap
-│       │       └── GifGridItem.test.js.snap
+│       │       ├── GifGridItem.test.js.snap
+│       │       └── ListCategories.test.js.snap
 │       ├── helpers
 │       │   └── getGifs.test.js
 │       └── hooks
 │           └── useFetchGifs.test.js
 └── yarn.lock
 
-10 directories, 28 files
+10 directories, 30 files
 ```
 
 ### Scripts

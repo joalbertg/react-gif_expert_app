@@ -1,11 +1,12 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import GifGrid from './GifGrid';
 
 const ListCategories = ({categories}) => {
   return(
     <>
-      { categories ?
+      { categories && categories.length !== 0 ?
           categories.map(category => (
             <GifGrid
               key={category}
@@ -13,10 +14,18 @@ const ListCategories = ({categories}) => {
             />
           ))
         :
-        <h3>No categories to display.</h3>
+        <h3>There are no categories to display.</h3>
       }
     </>
   );
+}
+
+ListCategories.propTypes = {
+  categories: PropTypes.arrayOf(PropTypes.string).isRequired
+}
+
+ListCategories.defaultProps = {
+  categories: []
 }
 
 export default ListCategories;

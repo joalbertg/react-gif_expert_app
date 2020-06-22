@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests ListCategories component Should display correctly 1`] = `
+<Fragment>
+  <h3>
+    There are no categories to display.
+  </h3>
+</Fragment>
+`;
+
+exports[`Tests ListCategories component Should have an array of categories with 2 items 1`] = `
+<Fragment>
+  <GifGrid
+    category="Dragon Ball"
+    key="Dragon Ball"
+  />
+  <GifGrid
+    category="Samurai X"
+    key="Samurai X"
+  />
+</Fragment>
+`;

@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests GifExpertApp component Should display correctly 1`] = `
+<Fragment>
+  <h2>
+    GifExpertApp
+  </h2>
+  <AddCategory
+    setCategories={[Function]}
+  />
+  <hr />
+  <ListCategories
+    categories={Array []}
+  />
+</Fragment>
+`;
+
+exports[`Tests GifExpertApp component Should show a list of categories 1`] = `
+<Fragment>
+  <h2>
+    GifExpertApp
+  </h2>
+  <AddCategory
+    setCategories={[Function]}
+  />
+  <hr />
+  <ListCategories
+    categories={
+      Array [
+        "Dragon Ball",
+        "Samurai X",
+      ]
+    }
+  />
+</Fragment>
+`;

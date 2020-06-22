@@ -5,8 +5,8 @@ import {
   ListCategories
 } from './components';
 
-const GifExpertApp = () => {
-  const [categories, setCategories] = useState(['Dragon Ball']);
+const GifExpertApp = ({ defaultCategories }) => {
+  const [categories, setCategories] = useState(defaultCategories);
 
   return (
     <>
@@ -18,6 +18,10 @@ const GifExpertApp = () => {
       <ListCategories categories={categories} />
     </>
   );
+}
+
+GifExpertApp.defaultProps = {
+  defaultCategories: []
 }
 
 export default GifExpertApp;
